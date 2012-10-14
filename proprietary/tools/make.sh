@@ -1,10 +1,10 @@
 #!/bin/sh
 
-tar zxf soju-jro03e-factory-c9f5a67d.tgz
-cd soju-jro03e
-unzip image-soju-jro03e.zip
+tar zxf soju-jzo54k-factory-36602333.tgz
+cd soju-jzo54k
+unzip image-soju-jzo54k.zip
 cd ../
-./simg2img soju-jro03e/system.img system.ext4.img
+./simg2img soju-jzo54k/system.img system.ext4.img
 mkdir system
 sudo mount -o loop -t ext4 system.ext4.img system
 sync
@@ -52,6 +52,6 @@ done < ${ODEX_LIST}
 sudo umount system
 rmdir system
 rm -rf tmp
-rm -rf soju-jro03e
+rm -rf soju-jzo54k
 rm system.ext4.img
 
